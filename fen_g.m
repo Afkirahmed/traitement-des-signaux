@@ -1,0 +1,7 @@
+function [base_sig]=fen_g(sig1,fen)
+base_sig=[];
+ for i=1:max(size(sig1))-fen+1
+     V=mean(sig1(i:i+fen-1));
+     base_sig=[base_sig,V];
+ end
+end
